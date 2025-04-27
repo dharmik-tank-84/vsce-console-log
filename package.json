@@ -1,0 +1,40 @@
+{
+  "name": "infinite-console-log",
+  "displayName": "Infinite Console Log",
+  "description": "Insert infinite console.log statements with emojis and incrementing numbers.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.insertInfiniteConsoleLog"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "insert-console-log.insertLogs",
+        "title": "Insert Infinite Console Logs"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "insert-console-log.insertLogs",
+        "key": "ctrl+alt+c",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "start": "node ./out/extension.js",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dharmik-tank-84/vsce-console-log.git"
+  }
+}

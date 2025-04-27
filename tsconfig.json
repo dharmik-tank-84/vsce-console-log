@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "./out",
+    "rootDir": "./src",
+    "strict": true
+  },
+  "include": ["src/**/*.ts"], // Include all TypeScript files
+  "exclude": ["node_modules"]
+}
